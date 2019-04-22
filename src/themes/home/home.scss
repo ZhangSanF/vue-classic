@@ -1,0 +1,65 @@
+//全局颜色：
+$deepColor: #14805e;
+$midColor: #199672;
+$lightColor: #4acfa5;
+
+$deepBg: #444;
+$midBg: #585858;
+$lightBg: #666;
+
+$static: '/static/images';
+
+// 首页样式：
+.home-page{
+  .h-menu{display:block !important;}
+  .page-menu{display:none !important;}
+  .ball-scroll-box{
+    a{color:#ccc;}
+    .ball-scroll{height:50px;}
+  }
+    //标题
+    h1{height:35px;line-height:35px;padding:0 10px;font-size:14px;color:#fff;background:$deepColor;border-bottom:1px solid #20674d;font-weight:normal;
+       .link{float:right;color:$lightColor;}
+       i{border-color: $lightColor;}
+    }
+//     精选赛事：
+   .hot{
+       .tit{height:20px;line-height:20px;color:#ddd;background:$midColor;padding:0 10px 0 3px;
+            p{float:left;
+                i{height:10px;width:2px;display:inline-block;background:$lightColor;margin-right:4px;}
+            }
+            .time{float:right;}
+       }
+       .vs{height:40px;line-height:40px;background:$deepBg;color:#ddd;text-align: center;
+            a{color:#ddd;display:block;padding:0 12px;}
+            font{color:#aaa;margin:0 10px;}
+           img{vertical-align: middle;}
+           .right{float:right;color:#aaa;}
+       }
+        .cont{
+          .cow {display:flex;height:35px;color:#ddd;border-bottom:1px solid $deepBg;
+            .bifen{float:right;}
+            font { color: #ffdf1b;float:right;margin-left:15px;}
+            &>div{width:100%;padding:0 10px;}
+            .col-3,.col-2{border-bottom:1px solid #737373;border-right:1px solid #737373;}
+          }
+          .cow-1{text-align:center;background:$lightBg;
+            font{display:block;float: none;}
+          }
+          .cow-2{background:$midBg;line-height:32px;}
+          .cow-3{background:$lightBg;line-height:32px;}
+        }
+   }
+
+  .ball_box{
+    .ball_qiu{
+      .ball_nei {height: 20px; background: #a7a7a7; font-size: 12px; color: $deepBg;
+        .ball_title {display: block; width: 40%; box-sizing: border-box; float:  left; line-height: 20px;
+          i {display: inline-block; vertical-align: middle; width: 15px; height: 15px; margin-left: 10px;}
+        }
+        .ball_rq,.ball_dx {display: block; width: 30%; text-align: center; box-sizing: border-box; float:  left; line-height: 20px; }
+      }
+    }
+  }
+}
+//----------------首页样式 End-------------

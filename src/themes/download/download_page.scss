@@ -1,0 +1,50 @@
+.download_page {
+      width: 100%;
+      height: 100%;
+      background: url("../../../static/images/download/background@3x.png") no-repeat 0 0/100%;
+      padding-top: 125px;
+      .game_logo {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 30px;
+            background: url("../../../static/images/download/logo@3x.png") no-repeat 0 0/100%;
+      }
+      .game_name {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .iphone_icon,.android_icon {
+                  width: 21px;
+                  height: 23px;
+                  margin-right: 8px;
+            }
+            .iphone_icon {
+                  background: url("../../../static/images/download/deco@3x.png") no-repeat 0 0/100%;
+            }
+            .android_icon {
+                  background: url("../../../static/images/download/deco_android@3x.png") no-repeat 0 0/100%;
+            }
+            span {
+                  font-family: MicrosoftYaHei;
+                  color: #333;
+                  font-size: 20px;
+            }
+      }
+      .game_desc {
+            padding: 0;
+            margin: 18px auto 30px;
+            font-family: MicrosoftYaHei;
+            color: #333;
+            font-size: 14px;
+            text-align: center;
+      }
+      .download_btn {
+            display: block;
+            width: 184px;
+            height: 45px;
+            margin: 0 auto;
+            background: url("../../../static/images/download/Download_and_install@3x.png") no-repeat 0 0/100%;
+      }
+}

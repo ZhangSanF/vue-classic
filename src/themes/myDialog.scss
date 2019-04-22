@@ -1,0 +1,168 @@
+//全局颜色：
+$deepColor: #14805e;
+$midColor: #199672;
+$lightColor: #4acfa5;
+
+$deepBg: #444;
+$midBg: #585858;
+$lightBg: #666;
+
+$static: '../../static/images';
+
+
+.size11{font-size:11px}
+.size12{font-size:12px}
+.color999{color:#999;}
+.color666{color: #666;}
+.colorfff{color: #fff;}
+.hide{display: none}
+.color199{color:#199672;}
+.red{color:#ea5541;}
+.yellow{color:#ffdf1b;}
+em,i {font-style: inherit; }
+.ping{color:#50a2c6;}
+.lose{}
+
+.window_aside{
+  .weui-mask{background:rgba(#000,0.75);}
+  .weui-dialog{ width: 90% !important;text-align:left;max-width:100%; margin-top: -15% !important;//border: 3px solid #2d2d2d;
+    .order {height:  48px; background: #BC7D10; line-height: 48px; padding-left:12px;
+      .tiltle {font-size: 15px; color: #ffffff; }
+      .yue {margin-left:  5px; font-size: 12px; color: #ffffff;
+        em {color: #ffffff; font-style:  inherit; }
+      }
+      .close {float: right; font-family: 黑体; font-size:  18px; color: #f0f0f0; padding:0 10px;}
+    }
+    .ball_xz {background: #F0F0F0;padding: 8px 8px 0 8px;
+      .ball_xz_list {padding: 10px 8px 0 8px;  position: relative;background: #FFFFFF;border-bottom:  1px solid #F0F0F0;
+        .sz_fen {display:  block; font-size: 14px; color: #999999; }
+        .sz_vs {color: #323232; font-size: 15px; line-height: 38px;  display: block;border-bottom: 1px dashed #E3E2E2;//padding-bottom: 8px;
+          em {color: #C7270A;
+            i{font-size: 15px}
+          }
+        }
+        .sz_win {color: #323232; font-size: 15px;display: block;line-height: 38px;
+          em {font-style:  inherit; padding: 0px 5px;  color: #C7270A;font-size: 15px }
+        }
+        .delete {width: 18px; height: 18px; display: block; position: absolute; background: #e7242e; top: 14px; right: 20px; border-radius: 50%;
+          em {width:  50%; height:  2px; display: block; background: #fff; margin: 8px 0px 0 4.5px; }
+        }
+      }
+    }
+
+    .pay {background: #F0F0F0;
+      .zhushi-box{padding: 0 8px;background: #F0F0F0;
+        .zhushi {font-size: 12px; color: #999; line-height: 36px;  display: block;background: #FFFFFF;padding: 0 8px;
+          .number-style{color: #333333;font-weight: bold}
+        }
+      }
+      .pay_box { background: #F0F0F0;padding: 0 8px ;//border-bottom: 1px solid #bfbfbf;
+        .box{
+          background: #FFFFFF;padding: 0 8px 14px 8px;display: flex;align-items: center;justify-content: space-between;
+          .input{box-sizing:border-box;height: 46px;border: 1px solid #323232;border-radius: 4px;font-size: 15px;padding: 0 8px;width: 45%}
+          ::-webkit-input-placeholder{color: #999999;}    /* 使用webkit内核的浏览器 */
+          :-moz-placeholder{color: #999999;}                  /* Firefox版本4-18 */
+          ::-moz-placeholder{color: #999999;}                  /* Firefox版本19+ */
+          :-ms-input-placeholder{color: #999999;}
+        }
+        //.pay_input {width: 185px; color: #999; border: 1px solid $midColor; background: #fff; display:inline-block;
+        //  input[type="text"] {width: 155px; height: 30px; outline: none; border: none; background: none; color: $midColor; text-indent: 10px; font-size: 15px; font-weight: bold; font-family:  Arial Bold; }
+        //  ::-webkit-input-placeholder{color: $midColor;}    /* 使用webkit内核的浏览器 */
+        //  :-moz-placeholder{color: $midColor;}                  /* Firefox版本4-18 */
+        //  ::-moz-placeholder{color: $midColor;}                  /* Firefox版本19+ */
+        //  :-ms-input-placeholder{color: $midColor;}
+        //}
+        #check_css3 {display:inline-block;line-height: 28px;//margin: 0 5px;
+          .hint{font-size: 15px;color: #999}
+        }
+        #check_css3 span {position: relative;}
+        #check_css3 .input_check {position: absolute;visibility: hidden;}
+        #check_css3 .input_check+label {display: inline-block;width: 22px;height: 23px;background:url('#{$static}/check1.png') center no-repeat;background-size:22px;top: 6px;position:relative;}
+        #check_css3 .input_check:checked+label:after {content: "";position: absolute;left: 0px;bottom: 0px;width:22px;height: 22px; border:1px solid #707070;border-radius:100%;background:#FFFFFF;}
+      }
+      .warn-box{background: #F0F0F0;padding: 8px;
+        .warn{height:40px;line-height:40px;color:#BA4B30;font-size:12px;background:#ffffff;border: 1px solid #BA4B30;display: flex;align-items: center;//padding-left:10px;margin-bottom:5px;
+          i{color:#ff9200;font-size:28px;padding: 0 5px}
+        }
+      }
+      .btn_commit {display: block;  background: #FFFFFF; text-align: center;padding: 8px;margin-top: 8px;//width: 95%; margin: 10px auto; border: 1px solid #056d4c;
+        .btn-content{background: #51A47D;border-radius: 4px;height: 48px;padding: 3px 0;
+          h3 {font-size: 16px; color: #fff; font-weight: initial;
+            i.weui-loading {position: relative;top: -2px;}
+          }
+          h4 {font-size: 12px; color:rgba(#F8F8F7,0.5);font-weight:normal; }
+        }
+        .not-content{background: #999999;border-radius: 4px;height: 48px;line-height: 48px;font-size: 16px;color: #FFFFFF}
+      }
+    }
+    //弹窗 提交成功
+    .sucess{
+      .suc_title {background: #BC7D10; padding: 0 10px; height: 45px;display: flex;justify-content: space-between;align-items: center;
+        .title-left{display: flex;justify-content: space-between;align-items: center;
+          .pic {width: 18px; height: 18px;background:url('#{$static}/check1.png') no-repeat;background-size:18px;; display: block; float:  left; margin-top:  14px; margin-right:  10px; }
+          .success-font{font-size: 15px;color: #FFFFFF;display: block}
+          .success-odd{font-size: 12px;color: #FFFFFF}
+        }
+        .close{font-size: 25px;color: #FFFFFF}
+      }
+      .touzhu { padding: 8px; //border-bottom: 1px solid #bfbfbf;background: #5cbe9f;
+        .touzhu-content{height: 32px;background: #FFFFFF;padding: 0 8px;line-height: 32px}
+        .left {float:  left; font-size: 12px;color: #999999;
+          .number{color: #51A47D;font-weight: bold}
+        }
+        .right {float: right; font-size: 12px;color: #999999;
+          .number{color: #51A47D;font-weight: bold}
+        }
+      }
+      .pay{
+        background: #FFFFFF;padding: 8px;display: flex;justify-content: space-between;
+      }
+      .btn_touzhu {text-align: center; height: 48px; line-height: 48px; color: #fff; background: #51A47D;border-radius: 4px;font-size: 16px;width: 49%  }
+      .btn_touzhu_his {text-align: center; height: 48px; line-height: 48px; color: #333333; background: #E5E0DC; border-radius: 4px;font-size: 16px;width: 49% }
+    }
+
+    //弹窗  设置
+    .site{background:#000;}
+    .site_title {height: 38px; background: $midColor; line-height: 38px; padding: 0 8px;
+      span.tiltle {font-size: 14px; color: #fff; }
+      span.close {color: #fff; font-size: 24px; float: right; }
+    }
+    .lang_chosse {background: #fff;
+      .title {font-size: 11px; color: #474747; line-height: 30px; padding: 0 8px; background: #e4e4e4; border-bottom:  1px solid #bfbfbf; }
+      &.pei_choose .vux-checker-item {height: 45px; line-height: 22px; }
+    }
+    .shower {line-height: 30px; padding: 0 8px; color: #474747; background: #e4e4e4; }
+  }
+  .lang_zn-item,.lang_fn-item {width: 100px; height: 26px; line-height: 26px; text-align: center; border: 1px solid #ccc; background-color: #fff; margin-right: 6px; }
+  .vux-checker-box {padding-bottom:10px;
+    div {width: 45%; margin: 10px 0 0 2.5%; height: 30px; line-height: 30px; border: 1px solid #e4e4e4; position: relative;font-size: 12px; }
+    .lang_fn-item-selected,.lang_zn-item-selected {border-color: $midColor !important; }
+    .lang_fn-item-selected:after,.lang_zn-item-selected:after {content: ""; width: 15px; height: 15px; display: block; position: absolute; top: -8px; right: -5px;background: #ffffff url('#{$static}/check1.png')  no-repeat;  background-size: 15px; }
+  }
+
+  .weui-switch:checked, .weui-switch-cp__input:checked ~ .weui-switch-cp__box {border-color: $midColor !important; background-color: $midColor !important; }
+  .vux-x-switch.weui-cell.weui-cell_switch {background: #e4e4e4; font-size: 11px; color: #474747;padding: 0 15px 0 8px;height: 33px;border-bottom: 1px solid #bfbfbf; }
+  .weui-switch {width: 40px; height: 24px; }
+  .weui-switch:after, .weui-switch-cp__box:after{width: 22px; height: 22px; left: -1px; top: 0; }
+  .weui-switch:before, .weui-switch-cp__box:before {width: 40px; height: 24px; }
+  .buttom_foot {background: $lightBg !important;
+    .peilv {line-height: 30px; border-bottom: 1px solid #737373; border-top: 1px solid #474747; padding: 0 8px; font-size: 12px;
+      .oddsCssselected {border-top: 0;
+        .peilv1:before {content: ""; width: 20px; height: 20px; display: inline-block; position: absolute; left: 0; top: 5px;background:url('#{$static}/check1.png')  no-repeat;  background-size: 20px; }
+        .size11{color:#199672;}
+      }
+      .peilv1 {display: inline-block; width: 40%; padding-left: 30px;position: relative;}
+      .p1,.p2 {width: 25%; display: inline-block; text-align: center; }
+    }
+  }
+
+
+  //警告、提示框：
+  .warning-tit{height:  40px; background: #585858; line-height: 40px; padding-left:10px;color:#fff;font-size:16px; }
+  .warning-content{
+    h1{line-height:50px;text-align:center;padding:20px 0;font-size:16px;color:#333;}
+    .btn_sure {display: block; width: 95%; margin: 10px auto; background: #14805e; border: 1px solid #056d4c; text-align: center;padding:8px;color:#fff;font-size:14px; }
+  }
+
+}
+

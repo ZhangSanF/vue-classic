@@ -1,0 +1,87 @@
+
+.rule {  width: 100%;  height: 100%;
+  .tab-box{height: 47px;  line-height: 47px;  display: flex;  flex-direction: row;  justify-content: space-around;box-sizing: border-box;  border-bottom: 1px solid #F0F0F0;  background: #ffffff;
+    .tab-text {display: inline-block;  width: 33.3%;  text-align: center;  color: #323232;font-size: 15px;  }
+    .tab-text.actives {  color: #BF7800;  }
+    .xian-box{position: relative;
+      .xian{width: 100%;height: 2px;background:#BF7800;position: absolute;bottom: 0;left: 0;transition: all .3s linear}
+    }
+    .fade-enter-active, .fade-leave-active{
+      transition: opacity .2s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+      opacity: 0;
+    }
+  }
+  .main_body {  position: absolute; width: 100%;  height: 100%;  background-color: #fff;
+    .select-style {  box-sizing: border-box;  margin: 8px;  height: 48px;  border: 1px solid #e2e2e2;  border-radius: 5px;  position: relative;
+      .icon-box{ position: absolute;  right: 5px;  top: 50%; transform: translate(0,-50%) rotate(-90deg) ; transition: transform .3s linear;
+        .icon-style{  color: #888888;  font-size:25px  }
+      }
+      .vux-cell-box{height: 48px;
+        .weui-cell {padding: 0;
+          .vux-popup-picker-select{box-sizing:border-box;height: 100%;text-align: left!important;line-height: 48px;
+            padding-left: 14px;z-index: 10001;
+            .vux-cell-value{color: #858585;font-size: 15px;}
+          }
+        }
+        .weui-cell_access .weui-cell__ft:after{display: none}
+      }
+    }
+    .outerWrapper {  position: fixed;left: 0;right: 0;bottom: 0;overflow: hidden;
+      //体育规则
+      .rule-content-box {  padding: 0 15px;  background-color: #fff;
+        .rule-content{
+
+          .content-item{
+
+          }
+        }
+      }
+      //规则与条款
+      .clause-box {
+        box-sizing: border-box;
+        padding: 10px 15px;
+        background-color: #fff;
+        .clause-content{
+          color: #333333;
+          .title{font-size: 13px}
+          p{font-size: 13px}
+          .content-item{
+
+          }
+        }
+      }
+      //赔率计算
+      .odds-box {  background: #ffffff;  padding: 10px 14px;
+        .odds-content{box-sizing: border-box;  width: 100%;  height: 408px;  border-top: 1px solid #e2e2e2;  border-left: 1px solid #e2e2e2;
+          .list-item{  box-sizing: border-box;  height: 34px;  border-bottom: 1px solid #e2e2e2;  display: flex;  line-height: 34px;
+            .item-content{box-sizing: border-box;
+              border-right: 0.01rem solid #e2e2e2;
+              text-align: center;
+              color: #323232
+            }
+            div:nth-child(1) {
+              width: 20%
+            }
+            div:nth-child(2) {
+              width: 20%
+            }
+            div:nth-child(3) {
+              width: 20%
+            }
+            div:nth-child(4) {
+              width: 20%
+            }
+            div:nth-child(5) {
+              width: 20%
+            }
+          }
+          li:nth-child(1) {
+            background: #F2F2F2
+          }
+        }
+      }
+    }
+  }
+}

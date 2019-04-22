@@ -1,0 +1,49 @@
+@font-face {
+font-family: 'rs';
+src:url('fonts/rs.eot');
+src:url('fonts/rs.eot#iefix') format('embedded-opentype'),
+  url('fonts/rs.ttf') format('truetype'),
+  url('fonts/rs.woff') format('woff'),
+  url('fonts/rs.svg#rs') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+.rs,.rs-2x,.rs-3x,.rs-4x,.rs-5x{font-family:'rs'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+.rs-2x{font-size: 2em;}
+.rs-3x{font-size: 3em;}
+.rs-4x{font-size: 4em;}
+.rs-5x{font-size: 5em;}
+
+.rs-football:before{content: "\e6af";}
+.rs-basketball:before{content:"\e69d";}
+.rs-tennis:before{content:"\e6b2";}
+.rs-volleyball:before{content:"\e6b3";}
+.rs-badminton:before{content:"\e69f";}
+.rs-tabletennis:before{content:"\e6ab";}
+.rs-baseball:before{content:"\e69e";}
+.rs-snooker:before{content:"\e6ac";}
+.rs-football-outright:before,.rs-other:before{content:"\e6a7";}
+.rs-handball:before{content:"\e909";}
+.rs-ice-hockey:before{content:"\e90a";}
+.rs-futsal:before{content:"\e90b";}
+.rs-menu-left:before{content:"\e90c";}
+.rs-menu-right:before{content:"\e90d";}
+.rs-down:before{content:"\e90e";}
+.rs-left:before{content:"\e90f";}
+.rs-close:before{content:"\e910";}
+.rs-refresh:before{content:"\e911";}
+.rs-close02:before{content:"\e912";}
+.rs-check:before{content:"\e913";}
+.rs-danger:before{content:"\e914";}
+.rs-question:before{content:"\e915";}
+.rs-show:before{content:"\e916";}
+.rs-hide:before{content:"\e917";}
+.rs-none-settlment:before{content:"\e918";}
+.rs-history:before{content:"\e919";}
+.rs-wallet:before{content:"\e91a";}
+.rs-setting:before{content:"\e91b";}
+.rs-news:before{content:"\e91c";}
+.rs-pagcor:before{content:"\e91d";}
+.rs-gamcare:before{content:"\e91e";}
+.rs-18:before{content:"\e91f";}

@@ -1,0 +1,48 @@
+//全局颜色：
+$deepColor: #14805e;
+$midColor: #199672;
+$lightColor: #4acfa5;
+
+$deepBg: #444;
+$midBg: #585858;
+$lightBg: #666;
+
+$static: '/static/images';
+
+//dylan
+$theme-color:#513F33;//头部主题色
+$theme-color-shallow:#8C7769;
+$main-color:#EBA01E;
+$tab-color:#BF7800;
+
+
+.notice-page{
+  .wrapper{background:#fff}
+  h1.title{background:$midColor;font-size:14px;font-weight:normal;color:#fff;padding:0 10px;height:30px;line-height:30px;}
+  .vux-header{padding:0;background:$deepColor;height:43px;
+    .vux-header-title{font-size:16px;}
+    .left-arrow:before{width:8px;height:8px;}
+  }
+  .tabBox{height:48px;line-height:48px;border-bottom:1px solid #F0F0F0;//background:$deepColor;
+    .vux-tab-item{line-height:48px;color:#323232;background:none;}
+    //.vux-tab-item:first-child{border-right:1px solid rgba(0,0,0,0.1);}
+    .vux-tab-selected{color:$tab-color;}
+    .vux-tab-ink-bar{background-color: $tab-color;height: 2px!important;}
+    //.vux-tab-ink-bar{bottom:2px;background:#fff;height:2px !important;}
+    .vux-tab-bar-inner{background:$tab-color;}
+  }
+  .list{
+    .weui-cell.item{display:block;padding:15px 10px;//margin: 0 10px;
+      &:nth-child(even){background:#F9F7F6;}
+      .vux-label{margin-bottom:5px;color: #333333;font-size: 12px}
+      &:before{display:none;}
+    }
+    .weui-cells{margin:0;
+      .vux-cell-primary{text-align:left;}
+    }
+    .weui-cells:before{display: none}
+    .vux-cell-primary{color:#333333;line-height:20px;font-size: 12px}
+  }
+
+
+}

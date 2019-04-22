@@ -1,0 +1,321 @@
+.chess_teaching_box {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: scroll;
+      .chess_box_mask {
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, .4);
+            .chess_content_container {
+                  transform: translate(0, 181px);
+                  padding: 15px;
+                  background: #F2F2F2;
+                  border-radius: 10px 10px 0 0;
+                  font-size: 14px;
+                  color: #333;
+                  .back_to_desk {
+                        position: relative;
+                        text-align: center;
+                        height: 39px;
+                        .back_to_desk_btn {
+                              box-sizing: border-box;
+                              display: inline-block;
+                              height: 100%;
+                              line-height: 38px;
+                              text-align: center;
+                              padding: 0 15px;
+                              color: #FFF;
+                              background: url("../../../static/images/download/rectangle@3x.png") no-repeat 0 0/100%;
+                              i {
+                                    box-sizing: border-box;
+                                    display: inline-block;
+                                    width: 7px;
+                                    height: 7px;
+                                    border: none;
+                                    border-radius: 50%;
+                                    background: #FFF;
+                              }
+                              .dot_first {
+                                    animation: dotFirst 1s infinite linear;
+                              }
+                              .dot_second {
+                                    animation: dotSecond 1s infinite linear;
+                              }
+                              .dot_third {
+                                    animation: dotThird 1s infinite linear;
+                              }
+                              b {
+                                    font-weight: normal;
+                                    font-size: 13px;
+                                    margin-left: 5px;
+                              }
+                        }
+                        .install_app_now {
+                              display: inline-block;
+                              box-sizing: border-box;
+                              height: 39px;
+                              width: 176px;
+                              line-height: 4px;
+                              text-align: center;
+                              color: #FFF;
+                              background: url("../../../static/images/download/Click_to_download_APP@3x.png") no-repeat 0 0/100%;
+                        }
+                        .close_cur_page_btn {
+                              position: absolute;
+                              right: 0;
+                              top: 0;
+                              width: 15px;
+                              height: 15px;
+                              background: url("../../../static/images/download/close_button@3x.png") no-repeat 0 0/100%;
+                        }
+                  }
+                  .open_setting {
+                        font-family: MicrosoftYaHei;
+                        color: #333;
+                        font-size: 14px;
+                        padding: 15px 12px;
+                        margin: 15px auto 0;
+                  }
+                  .trust_statement {
+                        padding: 15px 12px;
+                        background: #FFF;
+                        border-radius: 5px;
+                        font-size: 14px;
+                        color: #333;
+                        font-family: MicrosoftYaHei;
+                        margin-bottom: 20px;
+                        i {
+                              color: #0179FF;
+                              font-style: normal;
+                        }
+                  }
+                  .teaching_step_1, .teaching_step_2, .teaching_step_3, .teaching_step_4, .teaching_step_5, .teaching_step_6 {
+                        font-size: 14px;
+                        color: #333;
+                        padding: 0 12px 0 0;
+                  }
+                  .step_1_tip {
+                        width: 258px;
+                        height: 169px;
+                        box-sizing: border-box;
+                        padding: 26px 12px 0;
+                        background: #FFF;
+                        border-radius: 5px;
+                        margin: 0 auto;
+                        .tip_title {
+                              height: 14px;
+                              line-height: 14px;
+                              font-family: PingFangHK-Regular;
+                              color: #333;
+                              text-align: center;
+                              padding: 0;
+                              margin: 0 auto;
+                              font-size: 14px;
+                              font-weight: 600;
+                        }
+                        .tip_content {
+                              box-sizing: border-box;
+                              font-family: PingFangHK-Regular;
+                              color: #333;
+                              font-size: 12px;
+                              text-align: center;
+                              padding: 0 8px;
+                              margin: 11px auto 15px;
+                              line-height: 15px;
+                              .tip_cpn_name {
+                                    text-decoration: underline;
+                                    -webkit-text-decoration-color: #E01D1D;
+                                    -moz-text-decoration-color: #E01D1D;
+                                    text-decoration-color: #E01D1D;
+                              }
+
+                        }
+                        .tip_cancel_btn {
+                              height: 44px;
+                              text-align: center;
+                              line-height: 44px;
+                              border-top: 1px solid #EBEBEB;
+                              font-family: PingFangHK-Regular;
+                              color: #1C6BF9;
+                              font-size: 15px;
+                        }
+                  }
+                  .teaching_step_2 {
+                        margin: 27px auto 13px;
+                  }
+                  .step_2_tip {
+                        width: 267px;
+                        height: 97px;
+                        background: url("../../../static/images/download/Set_up@3x.png") no-repeat 0 0/100%;
+                        margin: 0 auto;
+                  }
+                  .teaching_step_3 {
+                        margin: 21px auto 13px;
+                  }
+                  .step_3_tip {
+                        width: 269px;
+                        height: 96px;
+                        background: url("../../../static/images/download/currency@3x.png") no-repeat 0 0/100%;
+                        margin: 0 auto;
+                  }
+                  .teaching_step_4 {
+                        margin: 20px auto 15px;
+            }
+                  .step_4_tip {
+                        width: 271px;
+                        height: 97px;
+                        background: url("../../../static/images/download/device_management@3x.png") no-repeat 0 0/100%;
+                        margin: 0 auto;
+                        font-family: MicrosoftYaHei;
+                        font-size: 16px;
+                        color: #333;
+                        padding: 55px 0 0 20px;
+                  }
+                  .teaching_step_5 {
+                        margin: 16px auto 15px;
+                  }
+                  .step_5_tip {
+                        width: 271px;
+                        height: 82px;
+                        background: url("../../../static/images/download/Enterprise_application@3x.png") no-repeat 0 0/100%;
+                        margin: 0 auto;
+                        padding: 41px 20px 0 58px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 12px;
+                        color: #333;
+                  }
+                  .teaching_step_6 {
+                        margin: 16px auto 6px;
+                  }
+                  .step_6_tip {
+                        width: 271px;
+                        height: 144px;
+                        background: url("../../../static/images/download/trust@3x.png") no-repeat 0 0/100%;
+                        margin: 0 auto;
+                        //display: flex;
+                        //flex-direction: row;
+                        //justify-content: flex-start;
+                        //align-items: center;
+                        .trust_txt {
+                              font-family: PingFangHK-Regular;
+                              color: #0179FF;
+                              font-size: 12px;
+                              text-overflow: ellipsis;
+                              overflow: hidden;
+                              white-space: nowrap;
+                              padding: 19px 19px 0;
+                        }
+                        .come_from_txt {
+                              font-family: PingFangHK-Regular;
+                              color: #666;
+                              font-size: 10px;
+                              margin-top: 21px;
+                              word-break: break-all;
+                              padding: 0 12px;
+                        }
+                        .verified_txt {
+                              display: flex;
+                              flex-direction: row;
+                              justify-content: space-between;
+                              align-items: center;
+                              padding: 0 10px;
+                              transform: translate(0,-6px);
+                              .game_logo_icon {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    i {
+                                          width: 24px;
+                                          height: 24px;
+                                          margin-right:  10px;
+                                          background: url("../../../static/images/download/logo.png") no-repeat 0 0/100%;
+                                    }
+                                    span {
+                                          font-family: PingFangHK-Regular;
+                                          font-size: 12px;
+                                          color: #333;
+                                    }
+                              }
+                              .result_txt {
+                                    font-family: PingFangHK-Regular;
+                                    font-size: 12px;
+                                    color: #666;
+                              }
+                        }
+                  }
+                  .teaching_finish {
+                        color: #333;
+                        font-size: 13px;
+                        text-align: center;
+                        margin: 7px auto 18px;
+                  }
+            }
+      }
+}
+
+@keyframes dotFirst {
+      0% {
+            transform: scale(1, 1);
+      }
+      25% {
+            transform: scale(.5, .5);
+      }
+      50% {
+            transform: scale(1.2, 1.2);
+      }
+      75% {
+            transform: scale(1, 1);
+      }
+      100% {
+            transform: scale(1, 1);
+      }
+}
+
+@keyframes dotSecond {
+      0% {
+            transform: scale(1, 1);
+      }
+      25% {
+            transform: scale(1, 1);
+      }
+      50% {
+            transform: scale(.5, .5);
+      }
+      75% {
+            transform: scale(1.2, 1.2);
+      }
+      100% {
+            transform: scale(1, 1);
+      }
+}
+
+@keyframes dotThird {
+      0% {
+            transform: scale(1, 1);
+      }
+      25% {
+            transform: scale(1.2, 1.2);
+      }
+      50% {
+            transform: scale(1, 1);
+      }
+      75% {
+            transform: scale(.5, .5);
+      }
+      100% {
+            transform: scale(1, 1);
+      }
+}
+
+
+
+
+
+
+

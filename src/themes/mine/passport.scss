@@ -1,0 +1,76 @@
+//全局颜色：
+$deepColor: #14805e;
+$midColor: #199672;
+$lightColor: #4acfa5;
+
+$deepBg: #444;
+$midBg: #585858;
+$lightBg: #666;
+
+$static: '/static/images';
+
+//登录、注册···页面头部样式：
+.header{height:43px;font-size:12px;background:$deepColor;
+  .vux-header-title{font-size:16px;line-height:40px;}
+  .vux-header-left .left-arrow:before{width:10px;height:10px;}
+}
+
+.passport{position:absolute;left:0; right:0;width:100%;height:100%;background:#f6f6f6;}
+
+//login
+.login-page{
+  .login {padding: 10%;
+    p {display: block; font-size: 14px; color: $deepColor; line-height: 30px; margin-bottom:  10px;
+      input{width: 100%; height: 32px; text-indent: 5px; outline: none; border: 1px solid #14805e; }
+    }
+    .btn_login {width: 100%; display: block; background: $deepColor; line-height: 30px; text-align: center; color: #fff; border-radius: 3px; margin: 20px 0; }
+    .btn_regis {width: 100%; display: block; background: #40b38e; line-height: 30px; text-align: center; color: #fff; border-radius: 3px; margin: 10px 0; }
+    .btn_lose { display:block; text-align:right; color: #a7a7a7; text-decoration:  underline; }
+    .check_rember{
+      width: 70px;
+      height: 18px;
+      display: flex;
+      align-items:flex-end;
+      .weui-icon{
+        font-size: 14px;
+      }
+      .weui-icon-success{color: #14805e;position: relative;
+        &:before{box-sizing:border-box;width:14px;height: 14px;border-radius: 14px;}
+        &:after{ content:'';display:inline-block;width:10px;height:10px;border-radius:10px;background-color: white;position: absolute;left:6px;top:2px;z-index: -1}
+      }
+      span{color: #a7a7a7}
+    }
+    .yzm{
+      img{width:60px;height:32px;margin-left:5px;}
+      input{width:50%;}
+    }
+  }
+}
+.warning{color:#ff9200;margin-left:-5px;line-height:35px;
+  i{font-size:26px;color:#ff9200;vertical-align:middle;}
+  &.hide{display:none;}
+}
+
+
+//register：
+.register-page{
+  .regist{padding:8% 10%;
+    .form-row{margin:10px 0;font-size:14px;
+      .form-row-tit{line-height:25px;font-size:14px;color:$deepColor;}
+      input{border:1px solid $deepColor;height:30px;display:block;width:100%;text-indent:10px;}
+    }
+    .btn-regist{display:block;width:100%;margin: 30px auto;border-radius:3px;height:30px;line-height:30px;border:none;color:#fff;background:$deepColor;font-size:12px;}
+  }
+}
+
+//忘记密码：
+.forget-page{
+  .box{padding:8% 10%;
+    .form-row{margin:10px 0;font-size:14px;
+      .form-row-tit{line-height:25px;font-size:14px;color:$deepColor;}
+      input{border:1px solid $deepColor;height:30px;display:block;width:100%;text-indent:10px;}
+    }
+    .btn-regist{display:block;width:100%;margin: 30px auto;border-radius:3px;height:30px;line-height:30px;border:none;color:#fff;background:$deepColor;font-size:12px;}
+  }
+
+}
